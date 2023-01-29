@@ -71,6 +71,10 @@ class Login_page extends StatelessWidget {
                     width: screenSize.width * 0.9,
                     child: MyTextFieldWidget(
                       labelText: "Password",
+                      suffixIcon: TextButton(
+                        onPressed: () {},
+                        child: const Text("Forgot"),
+                      ),
                     ),
                   ),
                 ),
