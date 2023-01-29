@@ -6,9 +6,12 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.brown,
+      ),
       debugShowCheckedModeBanner: false,
-      home: Login_page(),
+      home: const Login_page(),
     );
   }
 }

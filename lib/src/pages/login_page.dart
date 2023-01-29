@@ -29,7 +29,7 @@ class Login_page extends StatelessWidget {
                   children: [
                     MyText(
                       data: "Sign in",
-                      fontSize: 18,
+                      fontSize: 17,
                       color: Colors.black45,
                     ),
                   ],
@@ -37,10 +37,10 @@ class Login_page extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 40,
+              height: 35,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 30),
+              padding: const EdgeInsets.only(left: 20),
               child: Row(
                 children: [
                   MyText(
