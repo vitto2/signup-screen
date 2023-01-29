@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:signup/src/widgets/text_field_widget.dart';
 import 'package:signup/src/widgets/text_widget.dart';
 
 class Login_page extends StatelessWidget {
@@ -27,23 +28,54 @@ class Login_page extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     MyText(
-                      data: "Log in",
-                      fontSize: 20,
+                      data: "Sign in",
+                      fontSize: 18,
                       color: Colors.black45,
                     ),
                   ],
                 ),
               ),
             ),
-            SizedBox(),
-            Row(
+            const SizedBox(
+              height: 40,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 30),
+              child: Row(
+                children: [
+                  MyText(
+                    data: "Log in",
+                    fontSize: 25,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 40,
+            ),
+            Column(
               children: [
-                MyText(
-                  data: "Sign up",
-                  fontSize: 25,
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: SizedBox(
+                    width: screenSize.width * 0.9,
+                    child: MyTextFieldWidget(
+                      labelText: "You Email",
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: SizedBox(
+                    width: screenSize.width * 0.9,
+                    child: MyTextFieldWidget(
+                      labelText: "Password",
+                    ),
+                  ),
                 ),
               ],
-            )
+            ),
           ],
         ),
       ),
