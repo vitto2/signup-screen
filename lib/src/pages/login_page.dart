@@ -75,7 +75,10 @@ class Login_page extends StatelessWidget {
                       labelText: "Password",
                       suffixIcon: TextButton(
                         onPressed: () {},
-                        child: const Text("Forgot"),
+                        child: MyText(
+                          data: "Forgot",
+                          color: Colors.black,
+                        ),
                       ),
                     ),
                   ),
@@ -106,6 +109,7 @@ class Login_page extends StatelessWidget {
             MyText(
               data: "Or sign up with social account",
               fontSize: 15,
+              color: Colors.black,
             ),
             const SizedBox(
               height: 30,
@@ -117,22 +121,42 @@ class Login_page extends StatelessWidget {
                 children: [
                   SizedBox(
                     height: 50,
-                    width: 150,
+                    width: 170,
                     child: MyTextButtonicon(
-                      label: MyText(data: "Facebook"),
+                      label: MyText(
+                        data: "Facebook",
+                        color: Colors.black,
+                      ),
                       onPressed: () {},
-                      icon: const Icon(Icons.facebook),
+                      icon: const Icon(
+                        Icons.facebook,
+                        color: Colors.black,
+                      ),
                       shape: const StadiumBorder(),
+                      side: const BorderSide(
+                        width: 1,
+                        color: Colors.black,
+                      ),
                     ),
                   ),
                   SizedBox(
                     height: 50,
-                    width: 150,
+                    width: 170,
                     child: MyTextButtonicon(
-                      label: MyText(data: "Twitter"),
+                      label: MyText(
+                        data: "Twitter",
+                        color: Colors.black,
+                      ),
                       onPressed: () {},
-                      icon: const Icon(Icons.tab),
+                      icon: const Icon(
+                        Icons.tab,
+                        color: Colors.black,
+                      ),
                       shape: const StadiumBorder(),
+                      side: const BorderSide(
+                        width: 1,
+                        color: Colors.black,
+                      ),
                     ),
                   )
                 ],
