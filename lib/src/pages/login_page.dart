@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:signup/src/widgets/elevated_button.dart';
 import 'package:signup/src/widgets/text_field_widget.dart';
 import 'package:signup/src/widgets/text_widget.dart';
 
@@ -61,7 +62,7 @@ class Login_page extends StatelessWidget {
                   child: SizedBox(
                     width: screenSize.width * 0.9,
                     child: MyTextFieldWidget(
-                      labelText: "You Email",
+                      labelText: "Your Email",
                     ),
                   ),
                 ),
@@ -79,6 +80,23 @@ class Login_page extends StatelessWidget {
                   ),
                 ),
               ],
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            SizedBox(
+              width: screenSize.width * 0.9,
+              height: 50,
+              child: Myelevatedbutton(
+                onPressed: () {},
+                textData: MyText(
+                  data: "Log in",
+                  fontSize: 17,
+                  fontWeight: FontWeight.w400,
+                ),
+                buttonColor: Colors.black,
+                shape: const StadiumBorder(),
+              ),
             ),
           ],
         ),
