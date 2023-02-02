@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:signup/src/widgets/elevated_button.dart';
+import 'package:signup/src/widgets/my_text_button_icon.dart';
 import 'package:signup/src/widgets/text_field_widget.dart';
 import 'package:signup/src/widgets/text_widget.dart';
 
@@ -106,8 +107,36 @@ class Login_page extends StatelessWidget {
               data: "Or sign up with social account",
               fontSize: 15,
             ),
-            Row(
-              children: const [],
+            const SizedBox(
+              height: 30,
+            ),
+            SizedBox(
+              width: screenSize.width,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  SizedBox(
+                    height: 50,
+                    width: 150,
+                    child: MyTextButtonicon(
+                      label: MyText(data: "Facebook"),
+                      onPressed: () {},
+                      icon: const Icon(Icons.facebook),
+                      shape: const StadiumBorder(),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 50,
+                    width: 150,
+                    child: MyTextButtonicon(
+                      label: MyText(data: "Twitter"),
+                      onPressed: () {},
+                      icon: const Icon(Icons.tab),
+                      shape: const StadiumBorder(),
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
