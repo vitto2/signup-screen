@@ -94,10 +94,21 @@ class Login_page extends StatelessWidget {
                   fontSize: 17,
                   fontWeight: FontWeight.w400,
                 ),
-                buttonColor: Colors.black,
+                buttonColor: Colors.black87,
                 shape: const StadiumBorder(),
+                shadowColor: Colors.black,
               ),
             ),
+            const SizedBox(
+              height: 30,
+            ),
+            MyText(
+              data: "Or sign up with social account",
+              fontSize: 15,
+            ),
+            Row(
+              children: const [],
+            )
           ],
         ),
       ),

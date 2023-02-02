@@ -7,12 +7,14 @@ class Myelevatedbutton extends StatelessWidget {
     required this.textData,
     this.buttonColor,
     this.shape,
+    this.shadowColor,
   });
 
   Widget? textData;
   void Function()? onPressed;
   Color? buttonColor;
   OutlinedBorder? shape;
+  Color? shadowColor;
 
   @override
   Widget build(BuildContext context) {
@@ -21,6 +23,7 @@ class Myelevatedbutton extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         backgroundColor: buttonColor,
         shape: shape,
+        shadowColor: shadowColor,
       ),
       child: textData,
     );
