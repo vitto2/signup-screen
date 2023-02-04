@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:signup/src/widgets/elevated_button.dart';
 import 'package:signup/src/widgets/my_text_button_icon.dart';
 import 'package:signup/src/widgets/text_field_widget.dart';
 import 'package:signup/src/widgets/text_widget.dart';
 
-class Login_page extends StatelessWidget {
-  const Login_page({super.key});
+class Login extends StatelessWidget {
+  const Login({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -149,12 +150,12 @@ class Login_page extends StatelessWidget {
                       ),
                       onPressed: () {},
                       icon: const Icon(
-                        Icons.tab,
+                        FontAwesomeIcons.twitter,
                         color: Colors.black,
                       ),
                       shape: const StadiumBorder(),
                       side: const BorderSide(
-                        width: 1,
+                        width: 1.5,
                         color: Colors.black,
                       ),
                     ),

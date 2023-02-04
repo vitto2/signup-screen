@@ -11,7 +11,7 @@ class App extends StatelessWidget {
         primarySwatch: Colors.brown,
       ),
       debugShowCheckedModeBanner: false,
-      home: const Login_page(),
+      home: const Login(),
     );
   }
 }
