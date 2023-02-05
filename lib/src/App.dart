@@ -12,7 +12,11 @@ class App extends StatelessWidget {
         primarySwatch: Colors.brown,
       ),
       debugShowCheckedModeBanner: false,
-      home: const Signup(),
+      initialRoute: "/",
+      routes: {
+        '/': (context) => const Login(),
+        '/signup': (context) => const Signup(),
+      },
     );
   }
 }
